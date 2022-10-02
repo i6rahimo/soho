@@ -5,11 +5,11 @@
 
 @font-face {
   font-family: 'HeliosExtC Regular';
-  src: url(/assets/fonts/heliosc.otf);
+  src: url(/assets/fonts/heliosext.otf);
 }
 @font-face {
   font-family: 'HeliosExtC Bold';
-  src: url(/assets/fonts/heliosc_bold.otf);
+  src: url(/assets/fonts/heliosext_bold.otf);
 }
 :root {
   /*========== Colors ==========*/
