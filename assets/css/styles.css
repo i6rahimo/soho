@@ -75,6 +75,7 @@ ul {
 }
 
 li {
+  list-style-type: none;
   padding: 0;
   /* font-size: 0; */
 }
@@ -233,9 +234,9 @@ left: 257px;
 }
 .home__subtext-left {
   position: relative;
-  display: flex;
   width: 960px;
   max-width: 100%;
+  height: 250px;
 }
 .home__subtext-right {
   width: 320px;
@@ -281,4 +282,102 @@ left: 257px;
   text-align: center;
   font-family: var(--font-bold);
   margin: 24px 0 0;
+}
+
+
+/* ============  ABOUT ============= */
+.about {
+  width: 1636px;
+  max-width: 100%;
+  margin: auto;
+}
+.about__wrapper {
+  display: flex;
+  height: 754px;
+}
+
+.about__col-one {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  height: 206px;
+  width: 121px;
+  position: relative;
+  align-self: last baseline;
+  margin: 0 57px 116px 0;
+}
+.about__col-one::after {
+  content: '';
+  background: var(--black-color);
+  height: 286px;
+  width: 2px;
+  position: absolute;
+  right: -16px;
+  top: -44px;
+}
+.about__col-one .header__blog {
+  display: flex;
+justify-content: flex-end;
+align-items: center;
+text-align: end;
+}
+.about__col-two, .box {
+  width: 320px;
+  max-width: 100%;
+  height: 261px;
+  background-color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 0px 23px;
+}
+.about__col-two, .box p {
+  color: var(--white-color);
+  font-family: var(--font-bold);
+}
+.col__two-num, .box-num {
+  font-size: 33px;
+}
+
+.about__col-three {
+  width: 304px;
+  max-width: 100%;
+  display: flex;
+flex-direction: column;
+align-self: center;
+margin: 80px 16px 0 0;
+}
+.col__three-title {
+  font-family: var(--font-bold);
+  color: var(--black-color);
+  font-size: var(--h1-font-size);
+  margin: 0 0 36px 0;
+}
+
+.col__three-text p:not(:last-child) {
+  margin-bottom: 36px;
+}
+.col__three-text p {
+  font-size: 16px;
+  color: var(--black-color);
+  line-height: 19px;
+}
+.about__col-four {
+  width: 317px;
+  max-width: 100%;
+  display: flex;
+flex-direction: column;
+align-self: flex-end;
+}
+.about__col-four p:not(:last-child) {
+  margin-bottom: 41px;
+}
+.about__col-four p {
+  font-size: 16px;
+}
+.about__col-five {
+  width: 320px;
+  max-width: 100%;
+  text-align: end;
+  margin: 139px 0 0;
 }
