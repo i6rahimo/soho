@@ -1,0 +1,284 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+@font-face {
+  font-family: 'HeliosExtC Regular';
+  src: url(/assets/fonts/heliosc.otf);
+}
+@font-face {
+  font-family: 'HeliosExtC Bold';
+  src: url(/assets/fonts/heliosc_bold.otf);
+}
+:root {
+  /*========== Colors ==========*/
+  --black-color: #1E1E1E;
+  --white-color: #D9D9D9;
+
+  /*========== Font and typography ==========*/
+  --font-regular: 'HeliosExtC Regular', sans-serif;
+  --font-bold: 'HeliosExtC Bold', sans-serif;
+  --biggest-font-size: 175px;
+  --h1-font-size: 42px;
+  --normal-font-size: 26px;
+  --small-font-size: 16px;
+  --smaller-font-size: 11px;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    /* --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem; */
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+   color: var(--black-color);
+}
+body {
+  font-family: var(--font-regular);
+  font-size: var(--small-font-size);
+  color: var(--black-color);
+  background: url(/assets/img/mainbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .3s; /* For animation dark mode */
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  /* font-size: 0; */
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  /* font-size: 0; */
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.section__title span {
+  color: var(--second-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--second-color);
+}
+
+.main {
+  overflow: hidden; /* For the animations ScrollReveal*/
+}
+
+/*=============== HEADER & NAV ===============*/
+
+.header {
+  display: flex;
+  padding: 30px 30px 0;
+}
+.header__nav {
+  display: flex;
+  width: 100%;
+}
+.header__blog {
+  text-align: center;
+  flex: 1 0 0;
+}
+.header__ul {
+  padding : 0 0 0 237px;
+}
+.header__social {
+  margin: 0 225px 0 0;
+}
+
+.header__link {
+  font-size: var(--smaller-font-size);
+  line-height: 13px;
+  display: block;
+}
+.header__link {
+  margin-bottom: 3px;
+}
+.header__menu a{
+  font-size: var(--smaller-font-size);
+}
+.header__menu {
+  position: relative;
+  width:35px;
+  height: 16px;
+}
+.header__menu::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--black-color);
+}
+.header__menu::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--black-color);
+}
+
+/* =======  HOME =========== */
+.home {
+  position: relative;
+  margin: 166px auto 0;
+}
+.home__text {
+  height: 391px;
+}
+.home__text-name {
+  font-size: var(--biggest-font-size);
+  color: var(--black-color);
+  font-family: var(--font-bold);
+  position: relative;
+  line-height: 216px;
+  letter-spacing:50px;
+}
+.home__text-name::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 704px;
+  height: 9px;
+  top: 53%;
+left: 257px;
+  background-color: #E0FF00;
+  z-index: -1;
+}
+.home__text-title {
+  font-size: var(--h1-font-size);
+  font-family: var(--font-bold);
+  position: absolute;
+  right: 0;
+  line-height: 27px;
+}
+.home__text-title span {
+  font-size: 27px;
+  font-family: var(--font-regular);
+}
+.home__subtext-left {
+  position: relative;
+  display: flex;
+  width: 960px;
+  max-width: 100%;
+}
+.home__subtext-right {
+  width: 320px;
+  display: block;
+  margin: 0 0 0 10px;
+}
+.home__subtext-up img {
+  position: absolute;
+  top: 42px;
+  left: 250px;
+  max-width: 696px;
+  width: 100%;
+}
+.home__subtext-up p {
+  width: 455px;
+}
+.home__subtext {
+  display: flex;
+}
+.home__subtext-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  right: -21px;
+  top: 164px;
+}
+.home__subtext-down p {
+  font-size: 13px;
+  transform: rotate(-90deg);
+}
+
+.btn {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 9px 42px;
+}
+.home__btn {
+  padding: 15px 73px;
+  width: 320px;
+  display: block;
+  text-align: center;
+  font-family: var(--font-bold);
+  margin: 24px 0 0;
+}
