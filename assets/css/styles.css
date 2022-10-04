@@ -291,11 +291,31 @@ left: 257px;
   max-width: 100%;
   margin: auto;
 }
-.about__wrapper {
+
+.aboout__col-up {
   display: flex;
   height: 754px;
 }
-
+.col__down {
+  display: flex;
+  margin: 82px 0 0 177px;
+}
+.col__down-item {
+  width: 300px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col__down-btn {
+  display: flex;
+  align-self: flex-end;
+}
+.down__btn-blog {
+  /* max-width: 188px; */
+  /* display: block; */
+  padding: 9px 64px;
+}
 .about__col-one {
   display: flex;
   flex-direction: column;
