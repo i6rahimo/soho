@@ -741,3 +741,108 @@ left: 257px;
 .footer__about p {
   color: var(--white-color);
 }
+
+
+.team {
+  max-width: 1480px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.team__up {
+  display: flex;
+  align-self: flex-end;
+}
+.team__up-text {
+  font-family: var(--font-bold);
+  font-size: 42px;
+  display: flex;
+  align-self: flex-end;
+  margin: 0 0 -15px;
+}
+.team__cols {
+  display: flex;
+}
+
+.team__col {
+  text-align: end;
+}
+.team__col-one {
+  margin: 102px 0 0;
+}
+.team__col-three {
+  margin: 281px 0 0;
+}
+
+.team__col-four {
+  margin: 144px 0 0;
+}
+
+
+.join {
+  background: url('/assets/img/teambg.png');
+  color: var(--white-color);
+}
+.join__title {
+  display: flex;
+}
+.join__title p:nth-child(2) {
+  font-size: 42px;
+  font-family: var(--font-bold);
+  color: var(--white-color);
+  display: flex;
+  align-self: flex-end;
+  margin: 0 0 -15px;
+}
+.join__box {
+  background: var(--white-color);
+}
+.join__box p {
+  color: var(--black-color);
+}
+
+
+.join__resume {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 24px;
+}
+.join__resume-mail {
+  font-size: 19px;
+}
+.join__resume-mail a{
+
+  font-family: var(--font-bold);
+  color: var(--white-color);
+}
+.joun__resume-text {
+  width: 304px;
+}
+
+.join__covid {
+  display: flex;
+  justify-content: flex-end;
+}
+.join__covid p {
+
+  width: 609px;
+}
+.join__work-name {
+  font-size: 26px;
+  font-family: var(--font-bold);
+  color: var(--white-color);
+}
+.join__work-location {
+  font-size: 19px;
+  color: var(--white-color);
+}
+.join__work {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 100%;
+  margin: 84px 0 0;
+  padding: 0 0 65px;
+}
