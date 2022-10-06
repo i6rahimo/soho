@@ -174,7 +174,7 @@ button {
 }
 .header__menu {
   position: relative;
-  width:35px;
+  width: 40px;
   height: 16px;
 }
 .header__menu::after {
@@ -995,4 +995,10 @@ left: 257px;
   font-size: 26px;
   width: 641px;
   line-height: 31px;
+}
+.app__price-item_title::after {
+  display: none;
+}
+.app__form-allow.app__form-allow{
+  font-size: 9px;
 }
